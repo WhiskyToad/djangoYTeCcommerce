@@ -158,7 +158,7 @@ class ProductImage(models.Model):
         default="images/default.png",
     )
     alt_text = models.CharField(
-        verbose_name=_("Alturnative text"),
+        verbose_name=_("Alternative text"),
         help_text=_("Please add alturnative text"),
         max_length=255,
         null=True,
