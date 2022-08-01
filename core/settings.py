@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     "rest_framework",
     "account",
     "corsheaders",
+    "graphene_django",
 ]
 
 MIDDLEWARE = [
@@ -149,3 +150,6 @@ CORS_ALLOWED_ORIGINS = [
 
 CORS_EXPOSE_HEADERS = ["Content-Type", "X-CSRFToken"]
 CORS_ALLOW_CREDENTIALS = True
+
+# can put this in the url of each app too
+GRAPHENE = {"SCHEMA": "store.schema.schema"}
